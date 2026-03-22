@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "ComicVaultPro",
+    "slug": "comicvaultpro",
+    "scheme": "comicvaultpro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow ComicVault to access your camera to scan comic covers.",
+          "microphonePermission": "ComicVault does not need microphone access.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "react-native-vision-camera"
+    ],
+    "android": {
+      "package": "com.scottpierpont.comicvaultpro",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.scottpierpont.comicvaultpro",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2bd8c2bc-900c-4b83-af47-a1e8a63e929a"
+      }
+    }
+  }
+}
